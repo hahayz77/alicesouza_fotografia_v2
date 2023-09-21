@@ -1,8 +1,9 @@
 import CarouselCoverflow from "../CarouselCoverflow"
 
-const Featured = () => {
+const Featured = ({id}) => {
     return (
         <>
+            <h1>{id}</h1>
             <CarouselCoverflow />
         </>
     )
