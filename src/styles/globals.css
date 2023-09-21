@@ -112,7 +112,7 @@ a {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    @apply mt-32 sm:mt-64 my-64 relative grid sm:flex justify-center py-32 sm:py-16 bg-blue-900 rounded-xl;
+    @apply mt-32 sm:mt-64 my-64 relative grid sm:flex justify-center py-32 sm:py-16 rounded-xl;
 }
 
 #about .mandacaru_wrapper{
@@ -123,8 +123,8 @@ a {
   @apply w-full sm:w-1/2 grid place-content-center;
 }
 
-#about h2 {
-  @apply text-5xl font-mono px-6 pb-12 sm:pb-0;
+#about h1 {
+  @apply text-4xl sm:text-5xl font-mono px-6 pb-12 sm:pb-0;
 }
 
 #about hr {
