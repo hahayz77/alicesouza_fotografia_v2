@@ -21,10 +21,6 @@ body {
   color: white;
 }
 
-a {
-  @apply hover:scale-110 duration-300 ease-out cursor-pointer;
-}
-
 .title {
   @apply font-normal text-5xl;
 }
@@ -132,7 +128,7 @@ a {
 }
 
 #about .text_container {
-  @apply w-full sm:w-1/2 px-4 sm:px-24 text-justify sm:pl-10 grid place-content-center text-lg max-w-[800px];
+  @apply w-full sm:w-1/2 px-4 sm:px-24 text-justify sm:pl-10 grid place-content-center text-lg sm:text-xl font-light max-w-[800px];
 }
 
 
