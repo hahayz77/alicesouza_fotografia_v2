@@ -5,7 +5,11 @@ const albertSans = Albert_Sans({ subsets: ['latin'], weight: ['200', '400', '700
 const Header = ({ children, id }) => {
     return (
         <>
-            <h1 className={`${albertSans.className} ${id === "copy" ? "font-extralight" : "title"} text-center`}> {children} </h1>
+            {id === "copy" ?
+                <header><h1 className={`${albertSans.className}`}> {children} </h1></header>
+                :
+                <header><h2 className={`${albertSans.className}`}> {children} </h2></header>
+            }
         </>
     )
 }

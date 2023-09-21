@@ -16,13 +16,25 @@
   }
 }
 
+/* html {
+  background: var(--gray) !important;
+} */
+
 body {
   background: var(--gray);
   color: white;
 }
 
-.title {
-  @apply font-normal text-5xl;
+header h1 {
+  @apply text-4xl font-extralight
+}
+
+header h2 {
+  @apply font-extralight text-center text-5xl my-16
+}
+
+section {
+  @apply my-48 
 }
 
 
@@ -61,7 +73,7 @@ body {
 }
 
 #hero h1 {
-  @apply text-3xl sm:text-5xl py-8 px-2 sm:py-16 sm:px-12 text-center absolute bottom-[5%] left-[50%] translate-x-[-50%] z-10;
+  @apply text-3xl sm:text-5xl pb-8 px-2 sm:px-12 text-center absolute bottom-[5%] left-[50%] translate-x-[-50%] z-10;
 }
 
 @keyframes heroframes {
@@ -108,7 +120,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    @apply mt-32 sm:mt-64 my-64 relative grid sm:flex justify-center py-32 sm:py-16 rounded-xl;
+    @apply relative grid sm:flex justify-center rounded-xl py-12 mt-64;
 }
 
 #about .mandacaru_wrapper{
@@ -117,10 +129,6 @@ body {
 
 #about .title_container {
   @apply w-full sm:w-1/2 grid place-content-center;
-}
-
-#about h1 {
-  @apply text-4xl sm:text-5xl font-mono px-6 pb-12 sm:pb-0;
 }
 
 #about hr {
@@ -136,7 +144,7 @@ body {
 
 
 #featured{
-  @apply grid
+  @apply grid;
 }
 
 #featured .grid_imgs {
@@ -185,4 +193,12 @@ body {
 #featured .grid_imgs a:nth-child(7) {
   grid-column: 5/9;
   grid-row: 3/5;
+}
+
+
+/* ##################### ABOUT ##################### */
+
+
+#testimonials{
+  @apply mt-0  
 }

@@ -7,7 +7,7 @@ const About = ({ about }) => {
 
     return (
         <>
-            <section id="about" style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, ${opacity}), rgba(0, 0, 0, ${opacity})), url(${image ? urlForImage(image).url() : "/img/a2.jpg"})` }}>
+            <section id="about" className="section" style={{ backgroundImage: `linear-gradient(to top, rgba(0, 0, 0, ${opacity}), rgba(0, 0, 0, ${opacity})), url(${image ? urlForImage(image).url() : "/img/a2.jpg"})` }}>
                 <figure className="mandacaru_wrapper">
                     <Image width={120} height={120} src={"/img/mandacaru.png"} />
                 </figure>

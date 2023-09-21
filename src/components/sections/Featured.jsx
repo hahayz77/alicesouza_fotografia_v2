@@ -9,7 +9,7 @@ const Featured = ({featured}) => {
         <>
         <section id="featured">
             <Header>Destaques</Header>
-            <div className="grid_imgs mb-32">
+            <div className="grid_imgs">
                 {featured?.sort((a,b)=> a.order - b.order).map(({ _id, image, link }) => {
                     return (
                             <Link key={_id} href={link}> <Image width={1200} height={1200} src={urlForImage(image).url()} alt={link}/> </Link>

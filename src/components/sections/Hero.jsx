@@ -6,7 +6,7 @@ const Hero = ({ hero }) => {
     const { description, image, opacity } = hero[0];
     return (
         <>
-            <section id="hero">
+            <div id="hero">
                 <Header id="copy" >{description}</Header>
                 <div id="hero_img" style={{ backgroundImage: `linear-gradient(to top, rgba(45, 45, 45, ${opacity}), rgba(45, 45, 45, ${opacity})), url(${urlForImage(image).url()})` }}></div>
                 <div className="custom-shape-divider-bottom-1694885761">
@@ -14,7 +14,7 @@ const Hero = ({ hero }) => {
                         <path d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z" className="shape-fill"></path>
                     </svg>
                 </div>
-            </section>
+            </div>
         </>
     )
 }
