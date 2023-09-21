@@ -1,4 +1,9 @@
-const Hero = ({description, image}) => {
+import { urlForImage } from "../../../sanity/lib/image";
+import Header from "../Header";
+
+
+const Hero = ({ hero }) => {
+    const { description, image } = hero[0];
     return (
         <>
             <section id="hero">
