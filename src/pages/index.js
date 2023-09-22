@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Hero from '@/components/sections/Hero'
 import Featured from '@/components/sections/Featured'
@@ -8,6 +7,7 @@ import About from '@/components/sections/About'
 import Testimonials from '@/components/sections/Testimonials'
 import Cta from '@/components/sections/Cta'
 import Social from '@/components/sections/Social'
+import Footer from '@/components/sections/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -37,6 +37,7 @@ export default function Home({ hero, about, featured, testimonials, cta, social 
       <Testimonials testimonials={testimonials} />
       <Cta cta={cta} />
       <Social social={social} />
+      <Footer />
     </main>
   )
 }

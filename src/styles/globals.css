@@ -234,3 +234,56 @@ section {
 .social_item a img {
   @apply h-80 object-cover
 }
+
+
+/* ##################### SOCIAL ##################### */
+
+
+footer {
+  @apply bg-[var(--light-gray)] text-slate-700 font-extralight grid place-content-center grid-flow-row py-6
+}
+
+footer .footer_mandacaru_wrapper {
+  @apply absolute -top-10 left-0 right-0 w-full pointer-events-none z-10
+}
+
+footer .footer_links {
+  @apply text-4xl my-4 mt-12 flex justify-center gap-6 text-black opacity-50
+}
+
+footer .footer_links * {
+  @apply hover:scale-105 duration-300 ease-out overflow-visible
+}
+
+footer .footer_menu{
+  @apply flex gap-4 justify-center text-lg 
+}
+
+footer .footer_menu *:not(span) {
+  @apply hover:scale-105 duration-300 ease-out overflow-visible
+}
+
+footer p {
+  @apply justify-self-center py-4
+}
+
+#footer_curve {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  @apply translate-y-[-100%]
+}
+
+#footer_curve svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 30px;
+}
+
+#footer_curve .shape-fill {
+  fill: var(--light-gray);
+}
