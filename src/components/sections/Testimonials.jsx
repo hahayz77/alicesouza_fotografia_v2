@@ -13,11 +13,11 @@ const Testimonials = ({ testimonials }) => {
 
     return (
         <section id="testimonials">
-            <Header> Testemunhos </Header> 
+            <Header> Depoimentos </Header> 
             <Swiper slidesPerView={3} spaceBetween={10} className="mySwiper" effect={'coverflow'} onSlideChange={slide => setMandacaru(slide.activeIndex)}>
                 <SwiperSlide></SwiperSlide>
-                {sortedTestimonials.map(({ name, print, profile, text }, index) =>
-                    <SwiperSlide><CardComponent name={name} print={print} profile={profile} text={text} mandacaru={index === mandacaru ? true : false}/></SwiperSlide>
+                {sortedTestimonials.map(({ _id, name, print, profile, text }, index) =>
+                    <SwiperSlide key={_id}><CardComponent name={name} print={print} profile={profile} text={text} mandacaru={index === mandacaru ? true : false}/></SwiperSlide>
                 )}
                 <SwiperSlide></SwiperSlide>
             </Swiper>
