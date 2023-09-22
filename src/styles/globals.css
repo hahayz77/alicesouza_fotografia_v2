@@ -16,8 +16,9 @@
   }
 }
 
+/* Acessibilidade  */
 /* html {
-  background: var(--gray) !important;
+  background: var(--gray) !important; 
 } */
 
 body {
@@ -201,4 +202,35 @@ section {
 
 #testimonials{
   @apply mt-0  
+}
+
+
+
+/* ##################### CTA ##################### */
+
+
+
+.cta_button{
+  @apply bg-slate-200 rounded-full px-9 pt-2 pb-3 block mx-auto text-slate-700 mb-6 text-2xl font-extralight hover:scale-110 duration-300 ease-out
+}
+
+
+
+/* ##################### SOCIAL ##################### */
+
+
+#social{
+  @apply mr-16 
+}
+
+#social header h2 {
+  @apply text-left ml-16
+}
+
+#social .social_wrapper{
+  @apply rounded-r-3xl overflow-hidden
+}
+
+.social_item a img {
+  @apply h-80 object-cover
 }
