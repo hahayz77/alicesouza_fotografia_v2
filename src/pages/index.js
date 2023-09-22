@@ -1,4 +1,3 @@
-import { Inter } from 'next/font/google'
 import Hero from '@/components/sections/Hero'
 import Featured from '@/components/sections/Featured'
 import { client } from '../../sanity/lib/client'
@@ -9,8 +8,8 @@ import Cta from '@/components/sections/Cta'
 import Social from '@/components/sections/Social'
 import Footer from '@/components/sections/Footer'
 
-const inter = Inter({ subsets: ['latin'] })
-
+import { Albert_Sans } from 'next/font/google'
+const albertSans = Albert_Sans({ subsets: ['latin'], weight: ['200', '400', '700'] })
 
 export async function getStaticProps() {
   const hero = await client.fetch(`*[_type == "hero"]`);
@@ -19,7 +18,6 @@ export async function getStaticProps() {
   const testimonials = await client.fetch(`*[_type == "testimonials"]`);
   const cta = await client.fetch(`*[_type == "cta"]`);
   const social = await client.fetch(`*[_type == "social"]`);
-  // console.log(cta);
 
   return {
     props: { hero, about, featured, testimonials, cta, social }
@@ -29,7 +27,7 @@ export async function getStaticProps() {
 
 export default function Home({ hero, about, featured, testimonials, cta, social }) {
   return (
-    <main>
+    <main className={`${albertSans.className}`}>
       <Nav />
       <Hero hero={hero} />
       <About about={about} />

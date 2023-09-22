@@ -3,7 +3,9 @@ import Header from "../Header";
 
 
 const Hero = ({ hero }) => {
+
     const { description, image, opacity } = hero[0];
+    
     return (
         <>
             <div id="hero">

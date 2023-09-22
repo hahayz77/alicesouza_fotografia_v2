@@ -3,6 +3,7 @@ import { urlForImage } from "../../../sanity/lib/image";
 import Header from "../Header";
 
 const About = ({ about }) => {
+    
     const { title, description, image, opacity } = about[0];
 
     return (

@@ -19,9 +19,9 @@ const Social = ({ social }) => {
                 <Header>{title}</Header>
                 <div className="social_wrapper">
                     <Swiper slidesPerView={4} spaceBetween={0} pagination={{ clickable: true }} className="socialSwiper">
-                        {images?.map(({ link, image }, index) =>
-                            <SwiperSlide className="social_item">
-                                <Link href={link} target="_blank" key={index}>
+                        {images?.map(({ _id, link, image }, index) =>
+                            <SwiperSlide key={_id} className="social_item">
+                                <Link href={link} target="_blank" >
                                     <Image src={urlForImage(image).url()} width={800} height={800} alt={link} />
                                 </Link>
                             </SwiperSlide>
