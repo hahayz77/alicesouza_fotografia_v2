@@ -121,7 +121,7 @@ section {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    @apply relative grid sm:flex justify-center rounded-xl py-12 mt-64;
+    @apply relative grid sm:flex justify-center rounded-lg py-12 mt-64;
 }
 
 #about .mandacaru_wrapper{
@@ -196,9 +196,42 @@ section {
   @apply mt-0  
 }
 
+#testimonials .swiper-button-prev, #testimonials .swiper-button-next, .swiper-rtl .swiper-button-next, .swiper-rtl .swiper-button-prev, .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+  @apply text-white
+}
+
 /* #testimonials .swiper-wrapper .swiper-slide{
   @apply overflow-visible
 } */
+
+
+@media (min-width: 0px) and (max-width: 500px){
+  .testimonial_card {
+    @apply py-4 !w-[16rem] h-[22rem] overflow-visible my-16 mx-auto bg-neutral-100 text-small
+  }
+
+  .testimonial_card .card_header .quotes { 
+    @apply !text-[4rem]
+  }
+
+  .testimonial_mandacaru {
+    @apply translate-y-[-2rem] !translate-x-[20%] !scale-75
+  }
+
+  .testimonial_mandacaru {
+    @apply h-16 w-16
+  }
+
+  .testimonial_profile img { 
+    @apply !h-16 !w-16 !translate-x-[150%] !translate-y-4
+  }
+}
+
+@media (min-width: 500px) and (max-width: 800px){
+  .testimonial_card {
+    @apply py-4 w-[26rem] h-[22rem] overflow-visible my-24 mx-auto bg-neutral-900
+  }
+}
 
 .testimonial_card {
   @apply py-4 w-[26rem] h-[22rem] overflow-visible my-24 mx-auto bg-neutral-900
