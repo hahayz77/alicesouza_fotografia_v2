@@ -6,7 +6,7 @@ import { urlForImage } from "../../sanity/lib/image";
 export default function CardComponent({ name, print, profile, text, mandacaru }) {
     return (
         <>
-            <Card className={`testimonial_card ${mandacaru ? null : "scale-80"}`}>
+            <Card className={`testimonial_card ${ mandacaru ? "z-50 shadow-2xl shadow-slate-950" : "scale-80"}`}>
                 {mandacaru &&
                     <figure className="testimonial_mandacaru">
                         <Image alt="Card background" src="/img/mandacaru.png" width={100} />
