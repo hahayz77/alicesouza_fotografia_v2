@@ -10,7 +10,6 @@ import Header from '../Header';
 const Testimonials = ({ testimonials }) => {
     const [mandacaru, setMandacaru] = useState(0);
 
-
     const sortedTestimonials = testimonials.sort((a, b) => b._updatedAt.localeCompare(a._updatedAt))
 
     return (
