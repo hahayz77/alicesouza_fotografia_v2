@@ -116,6 +116,7 @@ section {
   }
 }
 
+
 #hero_curve {
   position: absolute;
   bottom: -2px;
@@ -146,7 +147,7 @@ section {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    @apply relative grid sm:flex justify-center rounded-lg py-12 mt-64;
+    @apply relative grid sm:flex justify-center rounded-lg py-12 mt-48 lg:mt-64;
 }
 
 #about .mandacaru_wrapper{
@@ -320,7 +321,7 @@ section {
 
 
 #social {
-  @apply mr-16 
+  @apply mr-10 md:mr-16 
 }
 
 #social header h2 {
@@ -331,10 +332,17 @@ section {
   @apply rounded-r-3xl overflow-hidden
 }
 
-.social_item a img {
+#social .social_item a img {
   @apply h-80 object-cover
 }
 
+#social .mobile_adapt {
+  @apply h-fit rounded-r-3xl overflow-hidden
+}
+
+#social .mobile_adapt .social_item a img {
+  @apply h-48 object-cover
+}
 
 /* ##################### SOCIAL ##################### */
 

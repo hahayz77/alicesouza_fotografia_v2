@@ -4,7 +4,7 @@ import { urlForImage } from "../../../sanity/lib/image"
 
 const TestimonialModal = ({ isOpen, onOpen, onOpenChange, content }) => {
 
-    console.log(content)
+    // console.log(content)
 
     return (
         <>
